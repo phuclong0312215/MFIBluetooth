@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE TABLE Shops(Phone TEXT NULL,Area TEXT NULL,ShopName TEXT NULL,ShopCode TEXT NOT NULL,CustomerName TEXT NULL,City TEXT NULL,Region TEXT NULL,District TEXT NULL,Address TEXT NULL,Town TEXT NULL,Latitude INTEGER NULL,Longitude INTEGER NULL,SupplierName TEXT NULL,SupplierCode TEXT NULL, PRIMARY KEY(ShopCode))\
+\
+\
+\
+\
+CREATE TABLE Products(CatCode TEXT NULL,ProductCode TEXT NOT NULL,CatName TEXT NULL,MarketName TEXT NULL,Stock INTEGER NULL,Photo TEXT NULL,Unit TEXT NULL,MarketCode TEXT NULL,Status INTEGER NULL,ListOrder INTEGER NULL,Price INTEGER NULL,Packsize_id TEXT NULL,OrderMarket INTEGER NULL,Division TEXT NULL,ProductName TEXT NULL, PRIMARY KEY(ProductCode))\
+\
+CREATE TABLE POSM(POSMName TEXT NULL,MarketCode TEXT NULL,POSMCode TEXT NOT NULL,OrderPOSM INTEGER NULL,CatCode TEXT NULL,OrderBy INTEGER NULL,Display TEXT NULL,Mobile TEXT NULL,MarketName TEXT NULL, PRIMARY KEY(POSMCode))\
+\
+CREATE TABLE Promotion(Competitor TEXT NULL,CatCode TEXT NULL,CatName TEXT NULL,_id INTEGER PRIMARY KEY AUTOINCREMENT)\
+sql	String	"INSERT INTO Products(ProductCode,ProductName,MarketCode,MarketName,CatCode,CatName,Division,Unit,ListOrder,Status,OrderMarket,Active,EffectiveDate) VALUES (\\'ADND-SAN-PHAM-CU\\',\\'ADND-SAN-PHAM-CU\\',\\'C111-ADND\\',\\'\uc0\u7844 M \u272 UN N\u431 \u7898 C \u272 i\u7878 N\\',\\'C111\\',\\'Cooking\\',\\'CLB\\',\\'\\',54,0,12,0,\\'\\')"	}
